@@ -56,7 +56,8 @@
             </td>
             <td>
               <span class="p-column-title">Status</span>
-              <a href="javascript:;" [pTooltip]="pessoa.ativo ? 'Desativar' : 'Ativar'" tooltipPosition="top">
+              <a href="javascript:;" [pTooltip]="pessoa.ativo ? 'Desativar' : 'Ativar'" tooltipPosition="top"
+              (click)="alternarStatus(pessoa)">
                 {{ pessoa.ativo ? 'Ativo' : 'Inativo' }}
               </a>
             </td>
@@ -64,7 +65,7 @@
               <span class="p-column-title"></span>
               <a pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top"></a>
               <button pButton icon="pi pi-trash" pTooltip="Excluir" tooltipPosition="top"
-              (click)="confirmarExclusao(pessoa)"></button>
+              (click)="confirmarExclusao(pessoa)" style="margin-left: 5px"></button>
             </td>
           </tr>
         </ng-template>
