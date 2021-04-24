@@ -60,6 +60,7 @@
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-var-requires": false,
+    "no-string-literal":false,
     "object-literal-key-quotes": [
       true,
       "as-needed"
@@ -108,6 +109,8 @@
       "options": [
         "ban-keywords",
         "check-format",
+        "allow-snake-case",
+        "allow-leading-underscore",
         "allow-pascal-case"
       ]
     },
