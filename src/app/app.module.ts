@@ -10,8 +10,9 @@ import { LancamentosModule } from './lancamentos/lancamentos.module';
 import { PessoasModule } from './pessoas/pessoas.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PessoaService } from './pessoas/pessoa.service';
-import { MessageService } from 'primeng/api';
+import { ConfirmationService, MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 
 @NgModule({
   declarations: [
@@ -24,10 +25,11 @@ import { ToastModule } from 'primeng/toast';
     CoreModule,
     HttpClientModule,
     ToastModule,
+    ConfirmDialogModule,
     LancamentosModule,
     PessoasModule
   ],
-  providers: [LancamentoService, PessoaService, MessageService],
+  providers: [LancamentoService, PessoaService, MessageService, ConfirmationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
