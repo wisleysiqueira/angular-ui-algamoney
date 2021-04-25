@@ -7,17 +7,15 @@
       </div>
 
       <div class="p-col-12">
-        <p-selectButton name="tipo" [options]="tipos"
-          [(ngModel)]="lancamento.tipo"
-          #tipo></p-selectButton>
+        <p-selectButton name="tipo" [options]="tipos" [(ngModel)]="lancamento.tipo" #tipo></p-selectButton>
       </div>
 
       <div class="p-col-6 p-md-3 p-fluid">
         <label>Vencimento</label>
         <p-calendar name="vencimento" dateFormat="dd/mm/yy"
           [inline]="false" [readonlyInput]="false" [showIcon]="false"
-          [(ngModel)]="lancamento.dataVencimento"
-          #vencimento="ngModel" required></p-calendar>
+          #vencimento="ngModel"
+          [(ngModel)]="lancamento.dataVencimento" required></p-calendar>
         <app-message [control]="vencimento" error="required"
           text="Informe uma data de vencimento"></app-message>
       </div>

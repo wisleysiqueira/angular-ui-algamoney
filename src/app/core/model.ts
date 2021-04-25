@@ -1,12 +1,14 @@
+import * as moment from "moment";
+
 export class Pessoa {
     codigo: number;
-}
-
-export class Categoria {
+  }
+  
+  export class Categoria {
     codigo: number;
-}
-
-export class Lancamento {
+  }
+  
+  export class Lancamento {
     codigo: number;
     tipo = 'RECEITA';
     descricao: string;
@@ -16,4 +18,4 @@ export class Lancamento {
     observacao: string;
     pessoa = new Pessoa();
     categoria = new Categoria();
-}
+    }
