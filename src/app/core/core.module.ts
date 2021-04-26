@@ -1,5 +1,6 @@
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { ToastModule } from 'primeng/toast';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
@@ -11,12 +12,14 @@ import { LancamentoService } from '../lancamentos/lancamento.service';
 import { PessoaService } from '../pessoas/pessoa.service';
 import { CategoriaService } from '../categorias/categoria.service';
 
+
 @NgModule({
   declarations: [
     NavbarComponent
   ],
   imports: [
     CommonModule,
+    RouterModule,
 
     ToastModule,
     ConfirmDialogModule
