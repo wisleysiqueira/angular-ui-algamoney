@@ -13,6 +13,7 @@ import { LancamentoService } from '../lancamentos/lancamento.service';
 import { PessoaService } from '../pessoas/pessoa.service';
 import { CategoriaService } from '../categorias/categoria.service';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component';
+import { AuthService } from '../seguranca/auth.service';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component'
     PessoaService, 
     CategoriaService,
     MessageService, 
+    AuthService,
     ConfirmationService, 
     { provide: LOCALE_ID, useValue: 'pt-BR' },
     ErrorHandlerService,

@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { LancamentosModule } from './lancamentos/lancamentos.module';
 import { PessoasModule } from './pessoas/pessoas.module';
 import { AppRoutingModule } from './app-routing.module';
+import { SegurancaModule } from './seguranca/seguranca.module';
 
 registerLocaleData(localePt);
 
@@ -27,6 +28,9 @@ registerLocaleData(localePt);
     CoreModule,    
     LancamentosModule,
     PessoasModule,
+
+    SegurancaModule,
+    
     AppRoutingModule
   ],
   providers: [],
