@@ -14,6 +14,7 @@ import { PessoaService } from '../pessoas/pessoa.service';
 import { CategoriaService } from '../categorias/categoria.service';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component';
 import { AuthService } from '../seguranca/auth.service';
+import { JwtHelperService } from '@auth0/angular-jwt';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { AuthService } from '../seguranca/auth.service';
     MessageService, 
     AuthService,
     ConfirmationService, 
+    JwtHelperService,
     { provide: LOCALE_ID, useValue: 'pt-BR' },
     ErrorHandlerService,
     Title
