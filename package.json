@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~11.1.0",
     "@angular/router": "~11.1.0",
     "@auth0/angular-jwt": "^5.0.2",
+    "angular2-jwt": "^0.2.3",
     "moment": "^2.29.1",
     "ng2-toasty": "^4.0.3",
     "primeflex": "^2.0.0",
