@@ -14,10 +14,7 @@ export class LoginFormComponent {
     private auth: AuthService,
     private errorHandler: ErrorHandlerService,
     private router: Router
-    ) {
-        this.login("admin@algamoney.com","admin")
-
-     }
+    ) { }
 
 
 

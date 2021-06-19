@@ -4,6 +4,7 @@ import { Title } from '@angular/platform-browser';
 
 import { ConfirmationService, LazyLoadEvent, MessageService } from 'primeng/api';
 import { Table } from 'primeng/table';
+import { AuthService } from 'src/app/seguranca/auth.service';
 
 import { PessoaFiltro, PessoaService } from '../pessoa.service';
 import { ErrorHandlerService } from './../../core/error-handler.service';
@@ -22,6 +23,7 @@ export class PessoasPesquisaComponent implements OnInit{
 
   constructor(
     private pessoaService: PessoaService,
+    private auth: AuthService,
     private errorHandler: ErrorHandlerService,
     private confirmation: ConfirmationService,
     private messageService: MessageService,
